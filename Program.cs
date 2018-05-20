@@ -4,25 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ConsoleApp2
 {
     class Program
     {
         static void Main(string[] args)
         {
-              Console.WriteLine("¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬");
-            Console.WriteLine("¬¬¬¬¬¬¬¬¬¬¬ Multiplos de 7 de 0 á 1000 ¬¬¬¬¬¬¬¬¬¬¬");
-            Console.WriteLine("¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬");
+            int contar = 0;
+            Console.WriteLine("¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬");
+            Console.WriteLine("¬¬¬¬¬¬¬¬¬¬¬¬ Números pares de 85 á 907 ¬¬¬¬¬¬¬¬¬¬¬¬");
+            Console.WriteLine("¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬");
 
-            for (int i = 0; i <= 1000; i++)
+            for (int i = 85; i <= 907; i++)
             {
-                if (i % 7 == 0)
+                if (i % 2 == 0)
                 {
                     Console.WriteLine("\n\n" + i);
+                    contar += i;
                 }
             }
 
+            Console.WriteLine("\n\nA soma de todos eles é: {0}!!!", contar);
+
             Console.ReadKey();
+
         }
     }
 }
